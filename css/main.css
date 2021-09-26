@@ -1,0 +1,32 @@
+:root {
+	--aqua: #43dde6;
+	--white: #ffffff;
+	--fontBase: 'Lato', sans-serif;
+	--normal: 400 0.75rem/0.9rem var(--fontBase);
+}
+
+.body {
+	align-items: center;
+	background: var(--aqua);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	margin: 0;
+	min-inline-size: 328px;
+}
+
+.wrapper {
+	flex: 1;
+	max-inline-size: 900px;
+	padding-inline-end: 16px;
+	padding-inline-start: 16px;
+}
+
+@media screen and (min-width: 540px) {
+	:root {
+		--aqua: #43dde6;
+		--white: #ffffff;
+		--fontBase: 'Lato', sans-serif;
+		--normal: 700 17px/1.275rem var(--fontBase);
+	}
+}
