@@ -7,7 +7,11 @@
 
 .body {
 	align-items: center;
-	background: var(--aqua);
+	background: url('../assets/icons/circle-2.svg'),
+		url('../assets/icons/circle-1.svg'), var(--aqua);
+	background-position: top left, bottom right, bottom right;
+	background-repeat: no-repeat;
+	background-size: 50%, 50%;
 	display: flex;
 	height: 100vh;
 	justify-content: center;
@@ -28,5 +32,14 @@
 		--white: #ffffff;
 		--fontBase: 'Lato', sans-serif;
 		--normal: 700 17px/1.275rem var(--fontBase);
+	}
+	.body {
+		background-size: auto, auto;
+	}
+}
+
+@media screen and (min-width: 1700px) {
+	.body {
+		background-size: 35%, 35%;
 	}
 }
